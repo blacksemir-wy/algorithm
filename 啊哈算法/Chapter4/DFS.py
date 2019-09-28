@@ -1,8 +1,9 @@
 def DFS(list):
+    global outlist
     #list为需要全排列的列表
     step = len(outlist)
     # 深度为3
-    if step == 3:
+    if step == len(list):
         print(outlist)
         return outlist
     else:
@@ -19,7 +20,6 @@ def DFS(list):
                 # print(outlist)
 
 list =[1,2,3]
-flag =[0 for x in range(3)]
 outlist = []
 DFS(list)
 
